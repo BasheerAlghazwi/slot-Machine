@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sltmachin.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello gamblur!"
+        android:id="@+id/gameName"
+        android:textSize="20sp"
+        android:textColor="#00ED5B"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pic"
+        android:layout_below="@+id/gameName"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/chery"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/grape" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/strwbery" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sbutton"
+        android:text="Start "
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/seek"
+        android:onClick="startSpinning"/>
+    <TextView
+        android:id="@+id/PC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="points Collected"
+        android:textSize="30sp"
+        android:layout_below="@+id/Sbutton"
+        android:textAlignment="center"
+        />
+    <SeekBar
+        android:id="@+id/seek"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="2"
+        android:progress="2"
+        android:layout_below="@+id/pic"/>
+
+</RelativeLayout>
